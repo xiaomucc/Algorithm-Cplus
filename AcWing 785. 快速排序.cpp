@@ -8,7 +8,7 @@ int n;
 void quickSort(int left, int right)
 {
 	if (left >= right) return;
-	int l = left - 1, r = right + 1, num = nums[right + left >> 1];
+	int l = left - 1, r = right + 1, num = nums[left + ((right - left) >> 1)];
 	while (l < r)
 	{
 		do l++; while (nums[l] < num);
